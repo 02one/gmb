@@ -1,4 +1,7 @@
-[Port0]
+package misc
+
+// 串口默认配置
+const usartDefaultCfg = `[Port0]
 Name=/dev/ttyS1
 BaudRate=115200
 DataBit=8
@@ -38,4 +41,4 @@ Name=/dev/ttyS6
 BaudRate=115200
 DataBit=8
 Parity=N
-StopBit=0
+StopBit=0`

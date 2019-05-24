@@ -1,10 +1,11 @@
 package main
 
 import (
-	_ "github.com/thinkgos/gmb/routers"
+	"github.com/thinkgos/gmb/misc"
+	"github.com/thinkgos/gmb/models"
 
 	"github.com/astaxie/beego"
-	_ "github.com/thinkgos/gmb/apps"
+	_ "github.com/thinkgos/gmb/routers"
 )
 
 func init() {
@@ -13,12 +14,12 @@ func init() {
 }
 
 func main() {
-	// misc.CfgInit()
-	// misc.LogsInit()
-	// err := models.DbInit()
-	// if err != nil {
-	// 	panic(err)
-	// }
+	misc.CfgInit()
+	//misc.LogsInit()
+	err := models.DbInit()
+	if err != nil {
+		panic(err)
+	}
 
 	beego.Run()
 }

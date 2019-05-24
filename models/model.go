@@ -9,7 +9,7 @@ import (
 	"github.com/pkg/errors"
 	"github.com/thinkgos/utils"
 
-	// sqlite驱动
+	// sqlite3 驱动
 	_ "github.com/mattn/go-sqlite3"
 )
 
